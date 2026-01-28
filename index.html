@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weater App</title>
+    <!-- Boot strap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="weathercard">
+        <div class="cardwaather">
+            <div class="card-body">
+                <h5 class="card-title">Weather App</h5>
+                <form id="weatherForm">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="cityInput" placeholder="Enter City Name:" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Get Weather</button>
+                </form>
+                <div id="weatherResult" class="mt-4"></div>
+            </div>
+            <div class="citycard">
+                <h4 id="cityname">City Name</h4>
+                <p class="city-contry" id="city-contry">Region</p>
+                <p class="time" id="time"> Time</p>
+            </div>
+            <div>
+                <img id="img" src="" >
+                <h1 class="temperature" id="temperature">c</h1>
+                <h4 class="cardday">Day</h4>
+            </div>
+            <div class="weatherdetails">
+                <div class="cards">
+                    <p>feels Like</p>
+                    <h6 class="feelslike" id="feelslike">--</h6>
+                </div>
+                <div class="cards">
+                    <p>Humidity</p>
+                    <h6 class="humidity" id="humidity">--</h6>
+                </div>
+            </div class="cards">
+            <div class="weatherdetails">
+                <div class="cards">
+                    <p>wind Speed</p>
+                    <h6 class="wind-speed" id="wind-speed">--</h6>
+                </div>
+                <div class="cards">
+                    <p>Visibility</p>
+                    <h6 class="visibility" id="visibility">--</h6>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+<!-- bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+<!-- JS FILE -->
+<script src="app.js">
+</script>
+
+</html>
